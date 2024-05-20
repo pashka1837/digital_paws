@@ -26,10 +26,10 @@ function calc_human_age(dog_age: number) {
 function calc_dog_age(dog_age: number) {
 	if (dog_age >= 1) {
 		const [whole, dec] = dog_age.toString().split('.');
-		return `${whole}y ${dec ? `${Math.floor(parseInt(dec) / 10 * 12)} month` : ''}`;
+		return `${whole}y ${dec ? `${Math.floor(parseInt(dec) / 10 * 12)} months` : ''}`;
 	}
 
-	return `${Math.floor(dog_age * 12)} month`;
+	return `${Math.floor(dog_age * 12)} months`;
 }
 
 const pets: PetObj[] = [
