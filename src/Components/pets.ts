@@ -9,7 +9,7 @@ import blck_jack_dog from '../assets/images/pets/blck_jack_dog.webp';
 import boneIMG from '../assets/images/attributes/bone.png';
 import boxMG from '../assets/images/attributes/box.png';
 import catCanIMG from '../assets/images/attributes/cat_can.png';
-import catFoodIMG from '../assets/images/attributes/cat_food.png';
+// Import catFoodIMG from '../assets/images/attributes/cat_food.png';
 import dogCanIMG from '../assets/images/attributes/dog_can.png';
 
 export type imgInfo = {
