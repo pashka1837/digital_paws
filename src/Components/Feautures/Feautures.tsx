@@ -13,9 +13,7 @@ export default function Feautures() {
 				</h3>
 			</div>
 			<div className='cards_container'>
-				{pets.map(pet => (
-					<Card key={pet.info.desc} {...pet} />
-				))}
+				{pets.map((pet, i) => <Card key={pet.imgInfo.name} {...pet} />)}
 			</div>
 		</div>
 	);

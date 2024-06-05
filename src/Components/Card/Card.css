@@ -11,9 +11,10 @@
   border: 2px solid #fefae0;
   border-bottom: none;
   width: 100%;
+  min-height: 190px;
   display: grid;
-  justify-items: center;
-  align-items: end;
+  place-items: center;
+  /* align-items: end; */
 }
 
 .pet_img_container img {
@@ -40,6 +41,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .pet_img_container {
+    min-height: 270px;
+  }
   .pet_desc_container h3 {
     line-height: 22px;
     font-size: 1.6rem;
@@ -51,6 +55,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .pet_img_container {
+    min-height: 290px;
+  }
   .pet_desc_container h3 {
     line-height: 25px;
     font-size: 1.8rem;

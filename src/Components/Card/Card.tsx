@@ -3,8 +3,9 @@ import {type PetObj} from '../pets';
 
 type CardProps = PetObj;
 
-export default function Card({imgSrc, info}: CardProps) {
-	const {name, dogAge, humAge, desc, petType} = info;
+export default function Card({imgSrc, imgInfo, cardInfo}: CardProps) {
+	const {name, petAge, humAge, desc} = imgInfo;
+	const {title1, title2, title3, title4} = cardInfo;
 
 	return (
 		<div className='card'>
@@ -13,16 +14,16 @@ export default function Card({imgSrc, info}: CardProps) {
 			</div>
 			<div className='pet_desc_container'>
 				<h3>
-					<span>Name:</span> {name}
+					<span>{title1}:</span> {name}
 				</h3>
 				<h3>
-					<span>{petType} Age:</span> {dogAge}
+					<span>{title2}:</span> {petAge}
 				</h3>
 				<h3>
-					<span>Human Age:</span> {humAge}
+					<span>{title3}:</span> {humAge}
 				</h3>
 				<h3>
-					<span>Description:</span> {desc}
+					<span>{title4}</span> {desc}
 				</h3>
 			</div>
 		</div>
