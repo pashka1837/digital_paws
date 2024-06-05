@@ -175,7 +175,7 @@ const pets: PetObj[] = [
 		   title4: '',
 		},
 		imgInfo: {
-			name: 'Bone from garbage',
+			name: 'Bone from a garbage',
 			petAge: 'Tasty treat',
 			humAge: 'Gets your dog\'s attention for 4 hours',
 			desc: '',
